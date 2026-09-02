@@ -1,0 +1,27 @@
+name: Basic GitHub Actions Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  basic-commands:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display current directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+      - name: Display current date
+        run: date
+
+      - name: Create a text file
+        run: |
+          echo "This file was created using GitHub Actions." > output.txt
+          cat output.txt
