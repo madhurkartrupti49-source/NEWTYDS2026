@@ -2,7 +2,7 @@ name: Daily 8 AM Cron Job
 
 on:
   schedule:
-    - cron: "0 8 * * *"
+    - cron: "05 10 * * *"
 
 jobs:
   daily-job:
