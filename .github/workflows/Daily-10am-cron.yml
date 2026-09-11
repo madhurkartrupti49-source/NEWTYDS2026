@@ -1,4 +1,4 @@
-name: Daily 8 AM Cron Job
+name: Daily 10 AM Cron Job
 
 on:
   schedule:
